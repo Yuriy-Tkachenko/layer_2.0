@@ -16,7 +16,7 @@
 - Purpose: Communicate criminal-defense positioning and drive consultation requests.
 - Content: Vertical chapter marker, eyebrow, one H1, two supporting paragraphs, primary and secondary CTAs, three credentials, response note, professional-association card.
 - Layout: Copy occupies the left half; portrait and desk occupy the right half; the association card overlaps the lower-right edge.
-- Asset: `assets/images/hero-lawyer-office-source.png`, derived from `Референс 2.png` without embedded UI text.
+- Assets: `assets/images/hero-lawyer-office-empty.png` for the cabinet and `assets/images/selivanov-real-portrait.gif` for the real attorney portrait.
 - Responsive behavior: Two columns on desktop; portrait becomes a lower visual panel on tablet/mobile; CTAs wrap and become full-width on narrow phones.
 
 ## Component registry
@@ -30,7 +30,8 @@
 ## Asset map
 
 - `Референс 2.png` — supplied visual reference, retained unchanged.
-- `assets/images/hero-lawyer-office-source.png` — clean project hero background generated from the supplied reference.
+- `assets/images/hero-lawyer-office-empty.png` — clean cabinet plate generated from the supplied reference; it contains no person.
+- `assets/images/selivanov-real-portrait.gif` — selected real portrait from the supplied photo set; the face and expression remain original pixels.
 - Inline SVG — interface icons and decorative legal mark; no external icon dependency.
 
 ## Interaction map
@@ -50,5 +51,5 @@
 ## Assumptions
 
 - All attorney details are transcribed only from the supplied reference and should be confirmed before production publication.
-- The supplied screenshot does not include a separate source portrait, so the generated hero image is a replaceable presentation asset.
+- The real portrait is layered separately from the generated cabinet plate so identity, facial features, and expression are not regenerated.
 - This delivery intentionally implements only the visible header and hero requested by the user.

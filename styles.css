@@ -224,10 +224,23 @@ a {
   position: absolute;
   inset: 0;
   z-index: -3;
-  background-image: url("assets/images/hero-lawyer-office-source.png");
+  overflow: hidden;
+  background-image: url("assets/images/hero-lawyer-office-empty.png");
   background-position: center;
   background-size: cover;
   transform: scale(1.002);
+}
+
+.hero__lawyer {
+  position: absolute;
+  top: 0;
+  right: -1.5%;
+  width: 54%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 19%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgb(0 0 0 / 0.42) 10%, #000 27%, #000 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, rgb(0 0 0 / 0.42) 10%, #000 27%, #000 100%);
 }
 
 .hero__shade {
@@ -687,6 +700,14 @@ a {
     order: 2;
   }
 
+  .hero__lawyer {
+    right: -22.5%;
+    width: 145%;
+    object-position: 50% 18%;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 16%, #000 100%);
+    mask-image: linear-gradient(180deg, transparent 0%, #000 16%, #000 100%);
+  }
+
   .hero__portrait::after {
     position: absolute;
     inset: 0;
@@ -861,8 +882,12 @@ a {
 
   .hero__portrait {
     height: 390px;
-    background-position: 70% center;
-    background-size: auto 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero__lawyer {
+    object-position: 50% 17%;
   }
 
   .association-card {
