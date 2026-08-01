@@ -224,7 +224,7 @@ a {
   position: absolute;
   inset: 0;
   z-index: -3;
-  background-image: url("assets/images/hero-lawyer-office-source.png");
+  background-image: url("assets/images/hero-lawyer-office-empty.png");
   background-position: center;
   background-size: cover;
   transform: scale(1.002);

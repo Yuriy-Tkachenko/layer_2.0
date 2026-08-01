@@ -16,7 +16,7 @@
 - Purpose: Communicate criminal-defense positioning and drive consultation requests.
 - Content: Vertical chapter marker, eyebrow, one H1, two supporting paragraphs, primary and secondary CTAs, three credentials, response note, professional-association card.
 - Layout: Copy occupies the left half; portrait and desk occupy the right half; the association card overlaps the lower-right edge.
-- Asset: `assets/images/hero-lawyer-office-source.png`, derived from `Референс 2.png` without embedded UI text.
+- Asset: `assets/images/hero-lawyer-office-empty.png`, generated from the approved composition without a person or embedded UI text.
 - Responsive behavior: Two columns on desktop; portrait becomes a lower visual panel on tablet/mobile; CTAs wrap and become full-width on narrow phones.
 
 ## Component registry
@@ -30,7 +30,7 @@
 ## Asset map
 
 - `Референс 2.png` — supplied visual reference, retained unchanged.
-- `assets/images/hero-lawyer-office-source.png` — clean project hero background generated from the supplied reference.
+- `assets/images/hero-lawyer-office-empty.png` — clean project hero background generated from the supplied reference, with no people.
 - Inline SVG — interface icons and decorative legal mark; no external icon dependency.
 
 ## Interaction map
