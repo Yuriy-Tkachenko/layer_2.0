@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#071119" />
+    <meta name="theme-color" content="#08141c" />
     <meta name="description" content="Защита по уголовным делам в Хабаровске. Адвокат Селиванов Андрей Александрович." />
     <meta property="og:title" content="Адвокат Селиванов — защита по уголовным делам" />
-    <meta property="og:description" content="Подключение на стадии проверки, задержания, обыска, допроса, предварительного следствия и суда." />
+    <meta property="og:description" content="Помощь на стадии проверки, задержания, обыска, допроса, предварительного следствия и суда." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/images/hero-lawyer-office-empty.png" />
+    <meta property="og:image" content="assets/images/hero-office-v3-cropped.png" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <title>Адвокат Селиванов — защита по уголовным делам</title>
   </head>
@@ -26,9 +26,7 @@
       </a>
 
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-        <span class="menu-toggle__line"></span>
-        <span class="menu-toggle__line"></span>
-        <span class="menu-toggle__label">Меню</span>
+        <span></span><span></span><b>Меню</b>
       </button>
 
       <nav class="site-nav" id="primary-nav" aria-label="Разделы сайта">
@@ -36,79 +34,254 @@
         <a href="#directions">Направления</a>
         <a href="#practice">Практика</a>
         <a href="#collegium">Коллегия</a>
-        <a href="#practice">Отзывы</a>
-        <a href="#consultation">Вопросы</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#faq">Вопросы</a>
         <a href="#contacts">Контакты</a>
       </nav>
 
-      <a class="header-contact" id="contacts" href="tel:+79941441349">
-        <span class="header-contact__copy">
-          <strong>+7 994 144-13-49</strong>
-          <small>Ежедневно с 9:00 до 21:00</small>
-        </span>
-        <span class="header-contact__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M7.1 3.7 9.3 8l-2 1.7c.9 2.2 2.8 4.1 5 5l1.7-2 4.3 2.2-.7 3.1c-.2.9-1 1.5-1.9 1.5C9.5 19.5 4.5 14.5 4.5 8.3c0-.9.6-1.7 1.5-1.9l1.1-2.7Z" /></svg>
-        </span>
+      <a class="header-contact" href="tel:+79941441349">
+        <span><strong>+7 994 144-13-49</strong><small>Ежедневно с 9:00 до 21:00</small></span>
+        <i aria-hidden="true"><img src="assets/images/icons/contact.png" alt="" /></i>
       </a>
     </header>
 
     <main id="main-content">
-      <section class="hero" id="hero" aria-labelledby="hero-title">
-        <div class="hero__portrait" aria-hidden="true"></div>
-        <div class="hero__shade" aria-hidden="true"></div>
-
-        <div class="hero__layout">
-          <aside class="hero__rail" aria-hidden="true">
-            <span class="hero__chapter">01</span>
-            <span class="hero__rail-line"></span>
-            <span class="hero__rail-label">Я рядом</span>
-            <span class="hero__rail-line hero__rail-line--short"></span>
-          </aside>
-
-          <div class="hero__content" id="about">
-            <p class="hero__eyebrow" id="directions">Адвокат Селиванов Андрей Александрович</p>
+      <section class="hero dark-section" id="hero" aria-labelledby="hero-title">
+        <div class="hero__backdrop" aria-hidden="true"></div>
+        <div class="section-shell hero__grid">
+          <aside class="section-rail" aria-hidden="true"><b>01</b><span></span><em>Я рядом</em></aside>
+          <div class="hero__content">
+            <p class="eyebrow">Адвокат Селиванов Андрей Александрович</p>
             <h1 id="hero-title">Защита<br />по уголовным делам<br />в Хабаровске</h1>
             <div class="hero__summary">
               <p>Подключаюсь на стадии проверки, задержания, обыска, допроса, предварительного следствия и суда.</p>
               <p>Опыт службы в МВД помогает понимать порядок действий правоохранительных органов и заранее оценивать процессуальные риски.</p>
             </div>
-
-            <div class="hero__actions" id="consultation">
-              <a class="button button--primary" href="tel:+79941441349">Получить консультацию</a>
-              <a class="button button--outline" href="tel:+79941441349">Позвонить адвокату</a>
+            <div class="hero__actions">
+              <a class="button button--gold" href="#contacts">Получить консультацию</a>
+              <a class="button button--ghost" href="tel:+79941441349">Позвонить адвокату</a>
             </div>
           </div>
 
-          <ul class="credentials" id="practice" aria-label="Профессиональные сведения">
-            <li class="credential">
-              <svg class="credential__icon" viewBox="0 0 36 42" aria-hidden="true"><path d="M18 2.5c4.3 3.1 8.8 4.1 13.5 4.8v10.1c0 9.3-5.3 16.5-13.5 21.4C9.8 33.9 4.5 26.7 4.5 17.4V7.3C9.2 6.6 13.7 5.6 18 2.5Z"/><path d="m12.5 19 3.5 3.5 7.8-9"/></svg>
-              <span><strong>2017–2026</strong><small>служба в системе МВД</small></span>
-            </li>
-            <li class="credential">
-              <svg class="credential__icon" viewBox="0 0 36 42" aria-hidden="true"><path d="M8 3.5h15l6 6v29H8z"/><path d="M23 3.5v7h6M13 17h11M13 23h11M13 29h8"/><circle cx="8" cy="19" r="4"/></svg>
-              <span><strong>27/1389</strong><small>регистрационный номер<br />в реестре адвокатов</small></span>
-            </li>
-            <li class="credential">
-              <svg class="credential__icon credential__icon--building" viewBox="0 0 44 42" aria-hidden="true"><path d="m22 3 18 8H4zM7 15h30M8 35h28M4 40h36M11 15v20M19 15v20M27 15v20M35 15v20"/></svg>
-              <span><strong>Адвокатская палата</strong><small>Хабаровского края</small></span>
-            </li>
+          <ul class="credentials" aria-label="Профессиональные сведения">
+            <li><i><img src="assets/images/icons/shield.png" alt="" /></i><span><strong>2017–2026</strong><small>служба в системе МВД</small></span></li>
+            <li><i><img src="assets/images/icons/document.png" alt="" /></i><span><strong>27/1389</strong><small>регистрационный номер в реестре адвокатов</small></span></li>
+            <li><i><img src="assets/images/icons/courthouse.png" alt="" /></i><span><strong>Адвокатская палата</strong><small>Хабаровского края</small></span></li>
           </ul>
 
-          <p class="hero__notice">
-            <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="6"/><circle cx="10" cy="10" r="2"/></svg>
-            <span>При задержании, обыске или вызове на допрос желательно связаться с адвокатом до дачи объяснений и показаний.</span>
-          </p>
-        </div>
+          <p class="hero__notice"><i>•</i> При задержании, обыске или вызове на допрос желательно связаться с адвокатом до дачи объяснений и показаний.</p>
 
-        <article class="association-card" id="collegium">
-          <div class="association-card__seal" aria-hidden="true">
-            <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28"/><path d="M32 13v35M21 24h22M16 44h32M21 24l-7 14h14l-7-14Zm22 0-7 14h14l-7-14Z"/></svg>
+          <article class="association-card" id="collegium">
+            <div class="association-card__mark" aria-hidden="true"><img src="assets/images/icons/scales.png" alt="" /></div>
+            <div>
+              <p>Работаю в Адвокатской коллегии<br /><strong>«Адвокаты Дальнего Востока»</strong><br />г. Хабаровск</p>
+              <small>Профессиональное объединение адвокатов, соблюдение стандартов коллегии и адвокатской этики.</small>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section light-section situations" id="situations" aria-labelledby="situations-title">
+        <div class="section-shell section-layout">
+          <aside class="section-rail section-rail--light" aria-hidden="true"><b>02</b><span></span><em>Ситуации</em></aside>
+          <div class="section-intro">
+            <h2 id="situations-title">Когда помощь адвоката особенно важна</h2>
+            <p>Чем раньше сформирована позиция защиты, тем больше возможностей повлиять на дальнейшее развитие дела.</p>
+            <div class="scale-symbol" aria-hidden="true"><img src="assets/images/icons/scales.png" alt="" /></div>
           </div>
-          <div class="association-card__copy">
-            <p>Работаю в Адвокатской коллегии<br /><strong>«Адвокаты Дальнего Востока»</strong><br />г. Хабаровск</p>
-            <span>Осуществляю работу в составе профессионального объединения адвокатов, соблюдая стандарты коллегии и адвокатской этики.</span>
+          <ol class="number-list situations__list">
+            <li><b>01</b><div><h3>Задержание или доставление в отдел</h3><p>Определение процессуального статуса, участие в первом допросе и защита от давления.</p></div></li>
+            <li><b>02</b><div><h3>Обыск</h3><p>Контроль процедуры, фиксация нарушений, проверка законности изъятия имущества.</p></div></li>
+            <li><b>03</b><div><h3>Вызов на допрос</h3><p>Подготовка к вопросам, определение безопасной позиции и участие адвоката.</p></div></li>
+            <li><b>04</b><div><h3>Доследственная проверка</h3><p>Анализ ситуации до возбуждения дела и подготовка правовой позиции.</p></div></li>
+            <li><b>05</b><div><h3>Избрание меры пресечения</h3><p>Подготовка возражений против заключения под стражу и обоснование более мягкой меры.</p></div></li>
+            <li><b>06</b><div><h3>Обжалование приговора</h3><p>Анализ судебного решения, подготовка жалобы и представление интересов.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section dark-section experience" id="about" aria-labelledby="experience-title">
+        <div class="experience__backdrop" aria-hidden="true"></div>
+        <div class="section-shell section-layout experience__layout">
+          <aside class="section-rail" aria-hidden="true"><b>03</b><span></span><em>Обо мне</em></aside>
+          <div class="experience__photo-note" aria-label="Место для фотографии адвоката">
+            <span>Фото адвоката</span><small>добавляется отдельно</small>
           </div>
-        </article>
+          <div class="experience__copy">
+            <h2 id="experience-title">Опыт работы внутри правоохранительной системы</h2>
+            <p>До получения статуса адвоката я проходил службу в системе МВД России. В практической работе изучал порядок проведения проверок и следственных действий, особенности фиксации доказательств и принятия процессуальных решений.</p>
+            <p>Этот опыт помогает оценивать уголовное дело не только со стороны защиты, но и понимать предполагаемую логику действий органов следствия.</p>
+            <blockquote>Задача защиты — не создавать необоснованных ожиданий, а заранее видеть риски и использовать предусмотренные законом возможности.</blockquote>
+          </div>
+          <ul class="experience__facts">
+            <li><i><img src="assets/images/icons/shield.png" alt="" /></i><span><strong>2017–2026</strong><small>служба в МВД России</small></span></li>
+            <li><i><img src="assets/images/icons/document.png" alt="" /></i><span><strong>Рег. № 27/1389</strong><small>в реестре адвокатов</small></span></li>
+            <li><i><img src="assets/images/icons/courthouse.png" alt="" /></i><span><strong>Адвокатская палата</strong><small>Хабаровского края</small></span></li>
+            <li><i><img src="assets/images/icons/key.png" alt="" /></i><span><strong>Личное ведение дела</strong><small>без передачи сторонним исполнителям</small></span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section light-section directions" id="directions" aria-labelledby="directions-title">
+        <div class="section-shell section-layout">
+          <aside class="section-rail section-rail--light" aria-hidden="true"><b>04</b><span></span><em>Направления</em></aside>
+          <div class="section-intro">
+            <h2 id="directions-title">Основные направления уголовной защиты</h2>
+            <p>Защита на стадии проверки, предварительного расследования, судебного разбирательства и обжалования.</p>
+          </div>
+          <div class="directions__list">
+            <article class="direction-item">
+              <button class="direction-item__toggle" type="button" aria-expanded="false" aria-controls="direction-01"><b>01</b><span>Наркотические средства и психотропные вещества</span><i aria-hidden="true">+</i></button>
+              <div class="direction-item__panel" id="direction-01"><div><p>Защита по делам о хранении, приобретении, перевозке и сбыте. Проверяю законность оперативных мероприятий, обыска и изъятия, порядок исследований и экспертиз, допустимость доказательств.</p><a href="#contacts">Обсудить ситуацию <span>→</span></a></div></div>
+            </article>
+            <article class="direction-item">
+              <button class="direction-item__toggle" type="button" aria-expanded="false" aria-controls="direction-02"><b>02</b><span>Мошенничество и экономические преступления</span><i aria-hidden="true">+</i></button>
+              <div class="direction-item__panel" id="direction-02"><div><p>Анализирую хозяйственные отношения, договоры, движение денежных средств и переписку. Отделяю гражданско-правовой спор от уголовного обвинения и формирую доказательную позицию.</p><a href="#contacts">Обсудить ситуацию <span>→</span></a></div></div>
+            </article>
+            <article class="direction-item">
+              <button class="direction-item__toggle" type="button" aria-expanded="false" aria-controls="direction-03"><b>03</b><span>Преступления против личности</span><i aria-hidden="true">+</i></button>
+              <div class="direction-item__panel" id="direction-03"><div><p>Защита по делам о причинении вреда здоровью, угрозах и иных преступлениях против личности. Работаю с показаниями, медицинскими документами, экспертизами и обстоятельствами необходимой обороны.</p><a href="#contacts">Обсудить ситуацию <span>→</span></a></div></div>
+            </article>
+            <article class="direction-item">
+              <button class="direction-item__toggle" type="button" aria-expanded="false" aria-controls="direction-04"><b>04</b><span>Кража, грабёж и разбой</span><i aria-hidden="true">+</i></button>
+              <div class="direction-item__panel" id="direction-04"><div><p>Проверяю квалификацию деяния, размер ущерба, доказательства причастности и роль каждого участника. Сопровождаю следственные действия и работаю над смягчающими обстоятельствами.</p><a href="#contacts">Обсудить ситуацию <span>→</span></a></div></div>
+            </article>
+            <article class="direction-item">
+              <button class="direction-item__toggle" type="button" aria-expanded="false" aria-controls="direction-05"><b>05</b><span>Должностные и коррупционные преступления</span><i aria-hidden="true">+</i></button>
+              <div class="direction-item__panel" id="direction-05"><div><p>Защита при обвинениях во взяточничестве, превышении полномочий и служебных злоупотреблениях. Изучаю должностные регламенты, финансовые материалы и результаты оперативных мероприятий.</p><a href="#contacts">Обсудить ситуацию <span>→</span></a></div></div>
+            </article>
+            <article class="direction-item">
+              <button class="direction-item__toggle" type="button" aria-expanded="false" aria-controls="direction-06"><b>06</b><span>ДТП с тяжкими последствиями</span><i aria-hidden="true">+</i></button>
+              <div class="direction-item__panel" id="direction-06"><div><p>Участвую в делах о ДТП с причинением тяжкого вреда или гибелью людей. Проверяю схему происшествия, технические заключения, показания участников и результаты автотехнической экспертизы.</p><a href="#contacts">Обсудить ситуацию <span>→</span></a></div></div>
+            </article>
+            <article class="direction-item">
+              <button class="direction-item__toggle" type="button" aria-expanded="false" aria-controls="direction-07"><b>07</b><span>Воинские преступления</span><i aria-hidden="true">+</i></button>
+              <div class="direction-item__panel" id="direction-07"><div><p>Защита военнослужащих по делам о самовольном оставлении части, неисполнении приказа и иных нарушениях порядка прохождения службы. Учитываю состояние здоровья и фактические условия службы.</p><a href="#contacts">Обсудить ситуацию <span>→</span></a></div></div>
+            </article>
+            <article class="direction-item">
+              <button class="direction-item__toggle" type="button" aria-expanded="false" aria-controls="direction-08"><b>08</b><span>Другие категории уголовных дел</span><i aria-hidden="true">+</i></button>
+              <div class="direction-item__panel" id="direction-08"><div><p>Если ситуация не относится к перечисленным категориям, проведу первичную правовую оценку, определю срочные действия и сообщу, могу ли принять поручение по делу.</p><a href="#contacts">Обсудить ситуацию <span>→</span></a></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="warning-band" aria-label="Важное предупреждение">
+        <div class="section-shell warning-band__inner">
+          <span class="warning-band__index">05</span>
+          <div><h2>Первые объяснения и показания могут определить дальнейший ход дела.</h2><p>Обратитесь за защитой желательно до первого допроса или сразу после задержания.</p></div>
+          <div class="stamp" aria-hidden="true"><span>РЕГ. № 27/1389</span><b>ХАБАРОВСК</b></div>
+        </div>
+      </section>
+
+      <section class="section dark-section process" aria-labelledby="process-title">
+        <div class="section-shell section-layout section-layout--full">
+          <aside class="section-rail" aria-hidden="true"><b>06</b><span></span><em>Процесс защиты</em></aside>
+          <div class="process__content">
+            <h2 id="process-title">Как строится защита</h2>
+            <ol class="process__steps">
+              <li><b>01</b><span></span><h3>Первичная оценка</h3><p>Изучение обстоятельств, текущего статуса дела и ближайших процессуальных рисков.</p></li>
+              <li><b>02</b><span></span><h3>Изучение материалов</h3><p>Анализ документов, протоколов, доказательств и ранее данных объяснений.</p></li>
+              <li><b>03</b><span></span><h3>Формирование позиции</h3><p>Определение правовой позиции и согласование дальнейших действий с доверителем.</p></li>
+              <li><b>04</b><span></span><h3>Участие в деле</h3><p>Участие в следственных действиях, судебных заседаниях и подготовка заявлений.</p></li>
+              <li><b>05</b><span></span><h3>Обжалование решений</h3><p>При наличии оснований — обжалование процессуальных решений и судебных актов.</p></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section light-section practice" id="practice" aria-labelledby="practice-title">
+        <div class="section-shell section-layout section-layout--full">
+          <aside class="section-rail section-rail--light" aria-hidden="true"><b>07</b><span></span><em>Практика</em></aside>
+          <div class="practice__content">
+            <div class="section-heading-row"><h2 id="practice-title">Примеры из практики</h2><p>Информация представлена без персональных данных. Результат каждого дела зависит от его обстоятельств.</p></div>
+            <div class="case-grid">
+              <article><h3>Дело по ч. 4 ст. 159 УК РФ</h3><dl><div><dt>Было</dt><dd>Обвинение в мошенничестве в особо крупном размере</dd></div><div><dt>Что сделано</dt><dd>Изучены материалы, заявлены ходатайства</dd></div><div><dt>Стало</dt><dd>Скорректирована правовая оценка</dd></div></dl></article>
+              <article><h3>Дело по ч. 3 ст. 30,<br />ч. 4 ст. 228.1 УК РФ</h3><dl><div><dt>Было</dt><dd>Тяжкое обвинение в покушении на сбыт</dd></div><div><dt>Что сделано</dt><dd>Проверены доказательства и порядок изъятия</dd></div><div><dt>Стало</dt><dd>Исключена часть доказательств</dd></div></dl></article>
+              <article><h3>Дело по ч. 2 ст. 111 УК РФ</h3><dl><div><dt>Было</dt><dd>Обвинение в причинении тяжкого вреда</dd></div><div><dt>Что сделано</dt><dd>Оспорены выводы экспертизы</dd></div><div><dt>Стало</dt><dd>Смягчена итоговая квалификация</dd></div></dl></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark-section reviews" id="reviews" aria-labelledby="reviews-title">
+        <div class="section-shell section-layout section-layout--full">
+          <aside class="section-rail" aria-hidden="true"><b>08</b><span></span><em>Отзывы</em></aside>
+          <div class="reviews__content">
+            <h2 id="reviews-title">Отзывы клиентов</h2>
+            <div class="review-grid">
+              <blockquote><i>“</i><p>Андрей Александрович подключился к делу на ранней стадии, подробно объяснил риски и порядок действий. Благодаря его работе удалось выстроить понятную позицию защиты.</p><footer>Александр, Хабаровск</footer></blockquote>
+              <blockquote><i>“</i><p>Очень внимательный подход к деталям дела. Все решения обсуждались заранее, без необоснованных обещаний и сложных юридических формулировок.</p><footer>Ирина, Хабаровск</footer></blockquote>
+              <blockquote><i>“</i><p>Профессионально и спокойно сопровождал дело, всегда оставался на связи. Рекомендую как ответственного адвоката.</p><footer>Дмитрий, Хабаровск</footer></blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section light-section related" aria-labelledby="related-title">
+        <div class="section-shell section-layout section-layout--full">
+          <aside class="section-rail section-rail--light" aria-hidden="true"><b>09</b><span></span><em>Практика</em></aside>
+          <div class="related__content">
+            <div><h2 id="related-title">Другие юридические вопросы</h2><p>Основная специализация — защита по уголовным делам. По отдельным вопросам возможна консультация или рекомендация профильного специалиста.</p></div>
+            <ul><li><i><img src="assets/images/icons/document.png" alt="" /></i><span>Наследственные споры</span></li><li><i><img src="assets/images/icons/scales.png" alt="" /></i><span>Семейные споры</span></li><li><i><img src="assets/images/icons/courthouse.png" alt="" /></i><span>Трудовые правоотношения</span></li><li><i><img src="assets/images/icons/contact.png" alt="" /></i><span>Уточнить возможность обращения</span></li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section light-section faq" id="faq" aria-labelledby="faq-title">
+        <div class="section-shell section-layout section-layout--full">
+          <aside class="section-rail section-rail--light" aria-hidden="true"><b>10</b><span></span><em>Вопросы</em></aside>
+          <div class="faq__content">
+            <h2 id="faq-title">Часто задаваемые вопросы</h2>
+            <div class="faq__grid">
+              <details><summary>Можно ли обратиться до возбуждения уголовного дела?</summary><p>Да. Участие адвоката на ранней стадии помогает оценить риски и подготовиться к процессуальным действиям.</p></details>
+              <details><summary>Выезжаете ли вы в отдел полиции или следственный орган?</summary><p>Да, возможность и время выезда согласовываются по телефону с учётом срочности ситуации.</p></details>
+              <details><summary>Что делать, если вызывают на допрос?</summary><p>Уточните свой процессуальный статус и до дачи показаний обсудите ситуацию с адвокатом.</p></details>
+              <details><summary>Сколько стоит помощь адвоката?</summary><p>Стоимость зависит от стадии, объёма материалов и предполагаемого объёма работы. Она определяется после первичной оценки.</p></details>
+              <details><summary>Может ли родственник обратиться вместо задержанного?</summary><p>Да. Родственник может сообщить обстоятельства и договориться о выезде адвоката.</p></details>
+              <details><summary>Сохраняется ли конфиденциальность обращения?</summary><p>Да. Сведения, полученные адвокатом в связи с обращением, защищены адвокатской тайной.</p></details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section dark-section" id="contacts" aria-labelledby="contact-title">
+        <div class="section-shell section-layout section-layout--full">
+          <aside class="section-rail" aria-hidden="true"><b>11</b><span></span><em>Контакты</em></aside>
+          <div class="contact-section__intro">
+            <span class="contact-section__eyebrow">Связаться с адвокатом</span>
+            <h2 id="contact-title">Нужна защита<br />по уголовному делу?</h2>
+            <p>Кратко опишите ситуацию. Я свяжусь с вами, чтобы обсудить обстоятельства и возможные действия.</p>
+            <div class="contact-section__promise"><img src="assets/images/icons/shield.png" alt="" /><span><strong>Адвокатская тайна</strong><small>Содержание обращения и полученные сведения строго конфиденциальны.</small></span></div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="contact-form__heading"><span>Конфиденциально</span><h3>Расскажите кратко о ситуации</h3><p>Достаточно нескольких предложений. Перезвоню, уточню обстоятельства и предложу дальнейший порядок действий.</p></div>
+            <div class="contact-form__grid">
+              <label class="form-field"><input name="name" autocomplete="name" required placeholder=" " /><span>Ваше имя</span></label>
+              <label class="form-field"><input name="phone" type="tel" autocomplete="tel" required placeholder=" " /><span>Телефон</span></label>
+              <label class="form-field form-field--wide"><textarea name="situation" rows="3" placeholder=" "></textarea><span>Кратко опишите ситуацию</span></label>
+            </div>
+            <fieldset class="contact-method">
+              <legend>Как удобнее связаться?</legend>
+              <label><input type="radio" name="contact-method" value="phone" checked /><span>Телефон</span></label>
+              <label><input type="radio" name="contact-method" value="whatsapp" /><span>WhatsApp</span></label>
+              <label><input type="radio" name="contact-method" value="telegram" /><span>Telegram</span></label>
+              <label><input type="radio" name="contact-method" value="max" /><span>MAX</span></label>
+            </fieldset>
+            <label class="form-consent"><input type="checkbox" required /><span>Согласен с обработкой персональных данных и условиями конфиденциальности.</span></label>
+            <div class="contact-form__footer"><button class="button button--gold" type="submit"><span>Получить консультацию</span><i aria-hidden="true">→</i></button><small>Ответ обычно в течение 15 минут<br />в рабочее время</small></div>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <div class="contact-links">
+            <p class="contact-links__title">Быстрая связь</p>
+            <a class="contact-link contact-link--phone" href="tel:+79941441349"><i><img src="assets/images/icons/contact.png" alt="" /></i><span><small>Позвонить сейчас</small><strong>+7 994 144-13-49</strong><em>Ежедневно с 9:00 до 21:00</em></span><b aria-hidden="true">↗</b></a>
+            <a class="contact-link" href="https://wa.me/79941441349"><i><img src="assets/images/messengers/whatsapp.png" alt="" /></i><span><small>Мессенджер</small><strong>WhatsApp</strong><em>Написать сообщение</em></span><b aria-hidden="true">↗</b></a>
+            <a class="contact-link" href="https://t.me/+79941441349"><i><img src="assets/images/messengers/telegram.png" alt="" /></i><span><small>Мессенджер</small><strong>Telegram</strong><em>Написать сообщение</em></span><b aria-hidden="true">↗</b></a>
+            <a class="contact-link" href="https://max.ru/"><i><img src="assets/images/messengers/max.png" alt="" /></i><span><small>Мессенджер</small><strong>MAX</strong><em>Открыть приложение</em></span><b aria-hidden="true">↗</b></a>
+          </div>
+          <div class="footer-credentials"><img src="assets/images/icons/scales.png" alt="" /><div><small>Профессиональный статус</small><strong>Адвокатская коллегия<br />«Адвокаты Дальнего Востока»</strong><span>Регистрационный номер 27/1389 · Хабаровск</span></div></div>
+          <div class="footer-bottom"><a href="#hero"><strong>Селиванов</strong><span>адвокат по уголовным делам</span></a><p>© 2026. Информация на сайте не является публичной офертой.</p><nav aria-label="Навигация в подвале"><a href="#directions">Направления</a><a href="#practice">Практика</a><a href="#faq">Вопросы</a></nav></div>
+        </div>
       </section>
     </main>
 
